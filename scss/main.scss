@@ -7,10 +7,10 @@ $linkedin:#0077B5;
 $github:#000;
 $codecamp:#006400;
 $default-height:100vh;
-$home-bg:url("../public_html/images/home.jpg");
-$about-bg:url("../public_html/images/about.jpg");
-$portfolio-bg:url("../public_html/images/portfolio.jpg");
-$contact-bg:url("../public_html/images/contact.jpg");
+$home-bg:url("../images/home.jpg");
+$about-bg:url("../images/about.jpg");
+$portfolio-bg:url("../images/portfolio.jpg");
+$contact-bg:url("../images/contact.jpg");
 #home {
   flex-shrink: 0;
   background :$home-bg;
