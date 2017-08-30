@@ -6,7 +6,6 @@
 
 #about {
   overflow: auto;
-  flex-shrink: 0;
   background: url("../images/about.jpg");
   background-size: cover;
   height: 100vh;
@@ -19,10 +18,7 @@
     border-color: black; }
   #about h3 {
     text-shadow: 1px 1px #fff;
-    color: #2B271C;
-    font-size: 300%; }
-  #about li {
-    font-size: 120%; }
+    color: #2B271C; }
   #about span {
     font-weight: bold;
     font-style: oblique; }
@@ -46,9 +42,6 @@
   background: url("../images/contact.jpg");
   background-size: cover;
   height: 100vh; }
-  #contact form {
-    border-right: 2px #000 solid;
-    flex-basis: 30%; }
   #contact input, #contact textarea {
     width: 100%;
     background-color: #DBDBDB;
@@ -63,13 +56,13 @@
     color: #DBDBDB; }
     #contact a :hover {
       font-size: 125%; }
-  #contact h2 {
+  #contact h3 {
     color: #DBDBDB; }
 
 .site-title {
   text-shadow: 2px 2px #fff;
   color: #2B271C;
-  font-size: 800%; }
+  font-size: 600%; }
 
 .site-subtitle {
   color: white; }
@@ -85,9 +78,6 @@
 
 .codecamp:hover {
   color: #006400 !important; }
-
-.about-content {
-  flex-basis: 30%; }
 
 .card {
   border-style: solid;

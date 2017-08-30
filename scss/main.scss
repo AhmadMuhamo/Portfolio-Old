@@ -19,7 +19,6 @@ $contact-bg:url("../images/contact.jpg");
 }
 #about {
   overflow:auto;
-  flex-shrink: 0;
   background :$about-bg;
   background-size:cover;
   height:$default-height;
@@ -35,11 +34,6 @@ img {
   h3 {
     text-shadow : 1px 1px #fff;
     color:$title-color;
-    font-size:300%;
-  }
-
-  li {
-    font-size:120%;
   }
   span {
     font-weight:bold;
@@ -70,10 +64,7 @@ h2 {
   background:$contact-bg;
   background-size:cover;
   height:$default-height;
-  form {
-    border-right:2px #000 solid;
-    flex-basis:30%;
-  }
+
   input {
     width:100%;
     background-color:#DBDBDB;
@@ -95,7 +86,7 @@ h2 {
     font-size:125%;
   }
   }
-  h2 {
+  h3 {
     color:#DBDBDB;
   }
 }
@@ -103,7 +94,7 @@ h2 {
   text-shadow : 2px 2px #fff;
   color: $title-color;
   font : {
-    size:800%;
+    size:600%;
   }
 }
 .site-subtitle {
@@ -121,9 +112,7 @@ h2 {
 .codecamp:hover {
   color:$codecamp !important;
 }
-.about-content {
-  flex-basis:30%;
-}
+
 .card {
   border : {
     style:solid;
