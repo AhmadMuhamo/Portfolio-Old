@@ -22,6 +22,8 @@ $contact-bg:url("../images/contact.jpg");
   background :$about-bg;
   background-size:cover;
   height:$default-height;
+  color:#000;
+  font-size:120%;
 img {
   width:60%;
   border : {
@@ -39,7 +41,6 @@ img {
     font-weight:bold;
     font-style:oblique;
   }
-  color:#000;
 }
 #portfolio {
   overflow:auto;

@@ -9,7 +9,8 @@
   background: url("../images/about.jpg");
   background-size: cover;
   height: 100vh;
-  color: #000; }
+  color: #000;
+  font-size: 120%; }
   #about img {
     width: 60%;
     border-width: 2px;
