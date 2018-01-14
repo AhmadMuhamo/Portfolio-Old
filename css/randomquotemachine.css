@@ -1,0 +1,19 @@
+body {
+  background-color: #007BFF;
+}
+h1 {
+  font-style:oblique;
+  border-bottom: solid 1px black;
+  font-family: 'Courier New';
+}
+.container {
+  height: 100vh;
+}
+.quote-container {
+  border-radius: 10px;
+  max-width:60%;
+  background-color:#FFF;
+}
+#fb-btn {
+  width:40.86px;
+}

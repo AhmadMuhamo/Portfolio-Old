@@ -1,0 +1,24 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Random Quote Machine</title>
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/randomquotemachine.css">
+</head>
+<body>
+	<div class="container d-flex flex-column align-items-center">
+	  <h1 class="display-3 mt-1 mb-5">Random Quote Machine</h1>
+	  <div class="quote-container mt-5">
+		<blockquote class="blockquote mx-4">
+			<p class="mt-4"><span class="text-center" id="quote-text"></span></p>
+			<footer class="blockquote-footer text-right mr-5" id="quote-author"></footer>
+		</blockquote>
+		<a href="" target="_blank" id="twt-btn" title="Tweet this quote!" class="btn btn-primary ml-4 mb-4"><i class="fa fa-twitter"></i> Tweet</a>
+		<button type="button" id="new-quote" class="btn btn-outline-primary mr-4 pull-right mb-4"><i class="fa fa-refresh"></i> New Quote</button>
+	  </div>
+	</div>
+	  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/popper.js/dist/popper.min.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="js/randomquotemachine.js"></script>
+</body>
