@@ -1,6 +1,7 @@
 #home {
   flex-shrink: 0;
   background: url("../images/home.jpg");
+  opacity: 0.9;
   background-size: cover;
   height: 100vh; }
 
