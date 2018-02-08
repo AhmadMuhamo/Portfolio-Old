@@ -1,0 +1,16 @@
+﻿body {
+  background-color: gray;
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  color:white;
+  font-style: oblique;
+}
+p, h2 {
+  color:#fff;
+  font-size: 150%;
+}
+.container-fluid {
+  background-color:black;
+  height:100vh;
+}
