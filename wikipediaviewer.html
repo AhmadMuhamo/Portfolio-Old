@@ -1,0 +1,79 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Wikipedia Viewer</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/wikipediaviewer.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand js-scroll-trigger" href="index.html">
+        <h2 class="mb-0">HamyS</h2>
+    </a>
+    <div class="collapse navbar-collapse" role="navigation">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/AhmadMuhamo">
+                    <h3 class="mb-0">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/ahmad-ibrahim-51556825/">
+                    <h3 class="mb-0">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/AhmadMuhamo">
+                    <h3 class="mb-0">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.freecodecamp.org/ahmadmuhamo">
+                    <h3 class="mb-0">
+                        <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                    </h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/ahmadmuhamo/?hl=en">
+                    <h3 class="mb-0">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="container d-flex flex-column mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-8 col-xs-8 mx-auto text-center mt-5">
+                <img id="wiki-image" src="http://www.bestforpr.co.uk/blog/wp-content/uploads/2013/08/Wikipedia-logo-en-big1.png" />
+                <img id="wiki-image-alter" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/27972782_1768735423176794_2092060670954633707_n.jpg?oh=c26ff120a84009962183014577c6818f&oe=5ADDD6FB"
+                />
+                <div class="form-group">
+                    <input id="search-field" class="mt-5 form-control" onkeyup="setLink(this.value)" placeholder="Search Wikipedia.." />
+                </div>
+                <a class="pull-right" id="search-link" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"> Random Article </a>
+            </div>
+            <div class="col-md-12 col-xs-12" id="search-list"></div>
+        </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/popper.js/dist/popper.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/wikipediaviewer.js"></script>
+</body>
+<footer class="footer d-flex align-items-center justify-content-center">
+    <p>All rights reserved <a href="index.html">HamyS</a> &copy; </p>
+</footer>
