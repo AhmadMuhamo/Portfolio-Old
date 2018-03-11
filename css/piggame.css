@@ -36,6 +36,9 @@ footer a{
     color: black;
     font-weight: bold;
 }
+i {
+    padding-top: 3%;
+}
 .rules {
     text-align: center;
     color: black;
