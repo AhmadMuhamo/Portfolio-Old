@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="./css/piggame.css">
+        
+        <title>Pig Game</title>
+    </head>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+            <h2 class="mb-0">HamyS</h2>
+        </a>
+        <div class="collapse navbar-collapse" role="navigation">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/AhmadMuhamo">
+                        <h3 class="mb-0">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/ahmad-ibrahim-51556825/">
+                        <h3 class="mb-0">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/AhmadMuhamo">
+                        <h3 class="mb-0">
+                            <i class="fa fa-github-square" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.freecodecamp.org/ahmadmuhamo">
+                        <h3 class="mb-0">
+                            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/ahmadmuhamo/?hl=en">
+                        <h3 class="mb-0">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <body>
+        <h1 class="game-score"></h1>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            
+            <img src="./images/dice-5.png" alt="Dice" class="dice">
+            <img src="./images/dice-6.png" alt="Dice 2" class="dice2">
+            
+        </div>
+        <button class="btn-settings"><i class="ion-ios-gear"></i></button>
+        <div class="game-settings clearfix">
+            <h1>Game Settings</h1>
+            </br>
+            <input type="number" id="game-score" placeholder="Game Score" step="10" min="10" value="100"/>
+            <input id="player-0-name" placeholder="Player 1 Name" value="Player 1"/>
+            <input id="player-1-name" placeholder="Player 2 Name" value="Player 2"/>
+            <p class="settings-buttons"><span id="btn-done">Done</span><span id="btn-rules">Show Rules</span></p>
+        </div>
+        <div class="wrapper clearfix rules">
+            <h1>GAME RULES</h1>
+            </br>
+            <p>The game has 2 players, playing in rounds</p>
+            <p>In each turn, a player rolls two dices as many times as he whishes. Each result get added to his ROUND score</p>
+            <p>BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn</p>
+            <p>The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn</p>
+            <p>The first player to reach 100 points or whichever score has been set in settings on GLOBAL score wins the game</p>
+            <p class="rules-confirm">Got it!</p>
+        </div>
+        <script src="./js/piggame.js"></script>
+        <script src="bower_components/popper.js/dist/popper.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+<footer class="footer d-flex align-items-center justify-content-center mb-auto">
+    <p>All rights reserved <a href="index.html">HamyS</a> &copy; </p>
+</footer>
+</html>
