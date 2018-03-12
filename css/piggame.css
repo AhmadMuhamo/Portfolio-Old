@@ -26,8 +26,9 @@ body {
 }
 footer {
     position: absolute;
+    transform: translateX(-50%);
     bottom: 0;
-    left: 45%;
+    left: 50%;
     color: black;
     font-size: 150%;
 }
@@ -199,14 +200,12 @@ i {
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
 .btn-settings {
-    left: 27%;
-    top: 20%;
+    left: 300px;
+    top: 80px;
 }
 .game-score {
-    position: absolute;    
     text-align: center;
-    top: 14%;
-    left: 45%;
+    color: red;
 }
 .dice {
     position: absolute;
