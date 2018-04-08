@@ -1,15 +1,35 @@
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Random Quote Machine</title>
-      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/randomquotemachine.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Random Quote Machine</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link js-scroll-trigger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <h4 class="mb-0 dropdown-toggle">Apps</h4>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="randomquotemachine.html">Random Quote Machine</a>
+                    <a class="dropdown-item" href="weatherapp.html">Weather App</a>
+                    <a class="dropdown-item" href="wikipediaviewer.html">Wikipedia Viewer</a>
+                    <a class="dropdown-item" href="twitchstreamers.html">Twitch Streamers</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="piggame.html">Pig Game</a>
+                    <a class="dropdown-item" href="mybudget.html">My Budget App</a>
+                </div>
+            </li>
+        </ul>
+    </div>
     <a class="navbar-brand js-scroll-trigger" href="index.html">
         <h2 class="mb-0">HamyS</h2>
     </a>
@@ -53,22 +73,29 @@
         </ul>
     </div>
 </nav>
-<body>
-	<div class="container d-flex flex-column align-items-center justify-content-center">
-	  <div class="quote-container mt-5">
-		<blockquote class="blockquote mx-4">
-			<p class="mt-4"><span class="text-center" id="quote-text"></span></p>
-			<footer class="blockquote-footer text-right mr-5" id="quote-author"></footer>
-		</blockquote>
-		<a href="" target="_blank" id="twt-btn" title="Tweet this quote!" class="btn btn-primary ml-4 mb-4"><i class="fa fa-twitter"></i> Tweet</a>
-		<button type="button" id="new-quote" class="btn btn-outline-primary mr-4 pull-right mb-4"><i class="fa fa-refresh"></i> New Quote</button>
-	  </div>
-	</div>
-	  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="bower_components/popper.js/dist/popper.min.js"></script>
-      <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="js/randomquotemachine.js"></script>
+
+<body class="rqm-body">
+    <div class="rqm-container d-flex flex-column align-items-center justify-content-center">
+        <div class="quote-container mt-5">
+            <blockquote class="blockquote mx-4">
+                <p class="mt-4">
+                    <span class="text-center" id="quote-text"></span>
+                </p>
+                <div class="blockquote-footer text-right mr-5" id="quote-author">
+                    </footer>
+            </blockquote>
+            <a href="" target="_blank" id="twt-btn" title="Tweet this quote!" class="btn btn-primary ml-4 mb-4">
+                <i class="fa fa-twitter"></i> Tweet</a>
+            <button type="button" id="new-quote" class="btn btn-outline-primary mr-4 pull-right mb-4">
+                <i class="fa fa-refresh"></i> New Quote</button>
+            </div>
+        </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/popper.js/dist/popper.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 <footer class="footer d-flex align-items-center justify-content-center">
-    <p>All rights reserved <a style="color:black; font-weight:bold;" href="index.html">HamyS</a> &copy; </p>
+    <p>All rights reserved
+        <a href="index.html">HamyS</a> &copy; </p>
 </footer>

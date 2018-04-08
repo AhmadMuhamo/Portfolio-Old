@@ -1,3 +1,4 @@
+/** HamyS */
 $title-color:#2B271C;
 $footer-color:#BBBBBB;
 $card-color:#DDD;
@@ -142,3 +143,18 @@ footer {
     font-weight:bold;
   }
 }
+/** HamyS */
+
+/** Random Quote Machine */
+.rqm-body {
+  background-color: lighten(#007BFF,10%);
+}
+.rqm-container {
+  height: 92.5vh;
+}
+.quote-container {
+  border-radius: 10px;
+  max-width:60%;
+  background-color:#FFF;
+}
+/** Random Quote Machine */
